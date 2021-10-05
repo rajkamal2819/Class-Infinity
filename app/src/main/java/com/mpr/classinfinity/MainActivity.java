@@ -3,12 +3,15 @@ package com.mpr.classinfinity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationBarView;
 import com.mpr.classinfinity.databinding.ActivityMainBinding;
+
+import io.ak1.OnBubbleClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,50 +23,90 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        getSupportActionBar().hide();
+        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
+        homeTransaction.replace(R.id.main_content,new HomeFragment());
+        homeTransaction.commit();
 
-        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        /* ------------------------Bottom normal Navigation Bar replacing with Bubble navigation bar----------------------*/
+
+        /*binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
                 switch (item.getItemId()){
-                    /**
+                    *//**
                      * if we are in Activity then so i used getSupportFragmentManger()
                      * else if we were in fragment then use getFragmentManager()
-                     */
+                     *//*
+
                     case R.id.home:
-                        FragmentTransaction homeTransaction = getSupportFragmentManager().beginTransaction();
-                        homeTransaction.replace(R.id.home_fragment,new HomeFragment());
-                        homeTransaction.commit();
+                        transaction.replace(R.id.main_content,new HomeFragment());
                         break;
 
                     case R.id.setting_menu:
-                        FragmentTransaction settingsTransaction = getSupportFragmentManager().beginTransaction();
-                        settingsTransaction.replace(R.id.setting_fragment,new SettingsFragment());
-                        settingsTransaction.commit();
+                        transaction.replace(R.id.main_content,new SettingsFragment());
                         break;
 
                     case R.id.chatBot:
-                        FragmentTransaction chatBotTransaction = getSupportFragmentManager().beginTransaction();
-                        chatBotTransaction.replace(R.id.chatBot_fragment,new ChatBotFragment());
-                        chatBotTransaction.commit();
+                        transaction.replace(R.id.main_content,new ChatBotFragment());
                         break;
 
                     case R.id.scanner:
-                        FragmentTransaction scannerTransaction = getSupportFragmentManager().beginTransaction();
-                        scannerTransaction.replace(R.id.scanner_fragment,new ScannerFragment());
-                        scannerTransaction.commit();
+                        transaction.replace(R.id.main_content,new ScannerFragment());
                         break;
 
                     case R.id.books:
-                        FragmentTransaction booksTransaction = getSupportFragmentManager().beginTransaction();
-                        booksTransaction.replace(R.id.books_fragment,new BooksFragment());
-                        booksTransaction.commit();
+                        transaction.replace(R.id.main_content,new BooksFragment());
                         break;
 
                 }
-                return false;
+
+                transaction.commit();
+                return true;
+
+            }
+        });*/
+
+        binding.bubbleTabBar.addBubbleListener(new OnBubbleClickListener() {
+            @Override
+            public void onBubbleClick(int i) {
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+                switch (i){
+                    case 0:
+                        transaction.replace(R.id.main_content,new HomeFragment());
+                        transaction.commit();
+                        break;
+
+                    case 1:
+                        transaction.replace(R.id.main_content,new SettingsFragment());
+                        transaction.commit();
+                        break;
+
+                    case 2:
+                        transaction.replace(R.id.main_content,new ChatBotFragment());
+                        transaction.commit();
+                        break;
+
+                    case 3:
+                        transaction.replace(R.id.main_content,new ScannerFragment());
+                        transaction.commit();
+                        break;
+
+                    case 4:
+                        transaction.replace(R.id.main_content,new BooksFragment());
+                        transaction.commit();
+                        break;
+
+                }
+
+               //
+                // transaction.commit();
             }
         });
+
 
     }
 }
