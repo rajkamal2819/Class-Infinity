@@ -6,4 +6,9 @@
         <item name="android:navigationBarColor">@color/dark_purple</item>
     </style>
 
+    <style name="logInPage" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/light_purple</item>
+    </style>
+
+
 </resources>

@@ -10,14 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClassInfinity">
         <activity
-            android:name=".MainActivity"
-            android:theme="@style/mainPage"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".Authentication"
+            android:theme="@style/logInPage"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/mainPage">
         </activity>
     </application>
 

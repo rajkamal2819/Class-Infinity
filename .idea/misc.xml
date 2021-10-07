@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/layout_shape.xml" value="0.2703125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_authentication.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_books.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_chat_bot.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_home_fragement.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_log_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_scanner.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_sign_up.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/menu/main_activity_navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/menu/main_activity_navigation_menu.xml" value="0.25416666666666665" />
       </map>
