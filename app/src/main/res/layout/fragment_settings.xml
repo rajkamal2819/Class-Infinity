@@ -8,10 +8,23 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/textttt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="26dp"
         android:layout_centerInParent="true"
         android:text="Setting Fragment" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signOutButton"
+        android:text=" Sign Out "
+        android:background="@color/purple"
+        android:layout_below="@id/textttt"
+        android:layout_centerHorizontal="true"/>
+
+
 
 </RelativeLayout>

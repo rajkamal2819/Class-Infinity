@@ -20,7 +20,7 @@
         android:background="@drawable/edittext_rounded"/>
 
     <EditText
-        android:id="@+id/emailId"
+        android:id="@+id/emailId_signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -33,7 +33,7 @@
         android:background="@drawable/edittext_rounded"/>
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/password_signUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -46,6 +46,7 @@
         android:background="@drawable/edittext_rounded"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
