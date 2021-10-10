@@ -29,17 +29,18 @@ public class MainActivity extends AppCompatActivity {
 
         /* ------------------------Bottom normal Navigation Bar replacing with Bubble navigation bar----------------------*/
 
-        /*binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        binding.bottomNavigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
                 switch (item.getItemId()){
-                    *//**
+                    /**
                      * if we are in Activity then so i used getSupportFragmentManger()
                      * else if we were in fragment then use getFragmentManager()
-                     *//*
+                     */
+
 
                     case R.id.home:
                         transaction.replace(R.id.main_content,new HomeFragment());
@@ -67,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             }
-        });*/
+        });
 
-        binding.bubbleTabBar.addBubbleListener(new OnBubbleClickListener() {
+       /* binding.bubbleTabBar.addBubbleListener(new OnBubbleClickListener() {
             @Override
             public void onBubbleClick(int i) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -101,11 +102,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
-
-               //
-                // transaction.commit();
+                 transaction.commit();
             }
-        });
+        });*/
 
 
     }
