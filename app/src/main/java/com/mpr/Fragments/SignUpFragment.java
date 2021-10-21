@@ -39,6 +39,8 @@ public class SignUpFragment extends Fragment {
     private ProgressDialog progressDialog;
     FragmentSignUpBinding binding;
 
+    float v = 0;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ public class SignUpFragment extends Fragment {
         progressDialog = new ProgressDialog(getContext());
         progressDialog.setTitle("Creating Account");
         progressDialog.setMessage("We are Creating Account");
+
 
         binding.signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -48,14 +48,15 @@ public class Authentication extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
     ActivityAuthenticationBinding binding;
 
-    public void onStart() {
+    private static String LOG_TAG = Authentication.class.getSimpleName();
+
+    @Override
+    protected void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
-        if (currentUser != null) {
-            // finish();
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-        }
+
+        firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        updateUI(firebaseUser);
+
     }
 
     @Override
@@ -78,10 +79,6 @@ public class Authentication extends AppCompatActivity {
 
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        if (user != null) {
-            // finish();
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-        }
 
         binding.googleAuthButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,11 +97,19 @@ public class Authentication extends AppCompatActivity {
 
     }
 
+    private void updateUI(FirebaseUser currentUser)
+    {
+        if(currentUser != null) {
+            Intent x = new Intent(Authentication.this,MainActivity.class);
+            startActivity(x);
+            Log.i(LOG_TAG,"Update UI Working");
+        }
+    }
+
     private void signIn() {
-        Intent signInIntent = new Intent(getApplicationContext(),MainActivity.class);
-       startActivityForResult(signInIntent,RC_SIGN_IN);
-        Toast.makeText(getApplicationContext(),"Sign In successful",Toast.LENGTH_SHORT).show();
-        Log.i(TAG, "Sign in done");
+        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Log.i(LOG_TAG, "Sign in done");
     }
 
     @Override
@@ -146,7 +151,7 @@ public class Authentication extends AppCompatActivity {
                             firebaseDatabase.getReference().child("Users").child(user.getUid()).setValue(users);
 
 
-                            // updateUI(user);
+                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
@@ -155,6 +160,7 @@ public class Authentication extends AppCompatActivity {
                     }
                 });
             }
+
 
 
 }
