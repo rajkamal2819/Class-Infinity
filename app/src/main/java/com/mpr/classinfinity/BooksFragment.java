@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
@@ -44,7 +46,7 @@ public class BooksFragment<BookAdapter> extends Fragment  /*implements LoaderMan
     private String mQuery;
 
     private static String LOG_TAG = BooksFragment.class.getSimpleName();
-    private String JSON_QUERY = "https://www.udemy.com/api-2.0/courses/?page=2";
+    private String JSON_QUERY = "https://www.udemy.com/api-2.0/courses/?page_size=12";
 
 
     @Override
@@ -125,9 +127,12 @@ public class BooksFragment<BookAdapter> extends Fragment  /*implements LoaderMan
 
         itemAdapter.notifyDataSetChanged();
 
+
+
     }
 
     private class HomeAsyncTask extends AsyncTask<URL, Void, ArrayList<Courses>> {
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         protected ArrayList<Courses> doInBackground(URL... urls) {
             ArrayList<Courses> event = QueryUtils.fetchCoursesData(JSON_QUERY);   //also we can use  urls[0]

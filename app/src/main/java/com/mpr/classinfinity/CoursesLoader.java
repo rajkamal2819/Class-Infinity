@@ -1,9 +1,11 @@
 package com.mpr.classinfinity;
 
 import android.content.Context;
+import android.os.Build;
 import android.text.TextUtils;
 import android.util.Log;
 
+import androidx.annotation.RequiresApi;
 import androidx.loader.content.AsyncTaskLoader;
 
 import com.mpr.Models.Courses;
@@ -28,6 +30,7 @@ public class CoursesLoader extends AsyncTaskLoader<ArrayList<Courses>> {
         forceLoad();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public ArrayList<Courses> loadInBackground() {
 
