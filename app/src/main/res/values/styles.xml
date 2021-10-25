@@ -2,8 +2,7 @@
 <resources>
 
     <style name="mainPage" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimaryDark">@color/dark_purple</item>
-        <item name="android:navigationBarColor">@color/dark_purple</item>
+        <item name="android:navigationBarColor">@color/white</item>
     </style>
 
     <style name="logInPage" parent="Theme.AppCompat.Light.NoActionBar">

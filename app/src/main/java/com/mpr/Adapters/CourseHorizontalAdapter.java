@@ -15,6 +15,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
 import com.mpr.Models.Courses;
+import com.mpr.classinfinity.CourseDetailsActivity;
 import com.mpr.classinfinity.R;
 
 import java.net.MalformedURLException;
@@ -25,12 +26,12 @@ import java.util.List;
 public class CourseHorizontalAdapter extends RecyclerView.Adapter<CourseHorizontalAdapter.CourseHorizontalHolder> {
 
     private ArrayList<Courses> list;
-    private ViewPager2 viewPager2;
+    private RecyclerView recyclerView;
     private Context context;
 
-    public CourseHorizontalAdapter(ArrayList<Courses> list, ViewPager2 viewPager2, Context context) {
+    public CourseHorizontalAdapter(ArrayList<Courses> list, RecyclerView recyclerView, Context context) {
         this.list = list;
-        this.viewPager2 = viewPager2;
+        this.recyclerView = recyclerView;
         this.context = context;
     }
 
@@ -42,8 +43,29 @@ public class CourseHorizontalAdapter extends RecyclerView.Adapter<CourseHorizont
 
     @Override
     public void onBindViewHolder(@NonNull CourseHorizontalHolder holder, int position) {
+
+       // Log.i("Slider item: ",""+list.size());
+        Courses currCourse = list.get(position);
         holder.setImageView(list.get(position));
-        Log.i("Slider item: ",""+list.size());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, CourseDetailsActivity.class);
+                i.putExtra("tittle", currCourse.getTittle());
+             //   i.putExtra("instructor", currCourse.getInstructorsList());
+                i.putExtra("instructorImage",currCourse.getInstructorsList().get(0).getPhoto());
+                i.putExtra("instructorName",currCourse.getInstructorsList().get(0).getName());
+                i.putExtra("id", currCourse.getId());
+                i.putExtra("url", currCourse.getUrl());
+                i.putExtra("isPaid", currCourse.isPaid());
+                i.putExtra("price", currCourse.getPrice());
+                i.putExtra("courseThumbnail", currCourse.getCourseThumbnail());
+                i.putExtra("description", currCourse.getDescription());
+                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(i);
+            }
+        });
+
     }
 
     @Override
