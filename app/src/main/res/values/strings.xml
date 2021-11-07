@@ -2,4 +2,7 @@
     <string name="app_name">ClassInfinity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ocr_text_recognition_msg">Hello Start Capturing image !!</string>
+
 </resources>

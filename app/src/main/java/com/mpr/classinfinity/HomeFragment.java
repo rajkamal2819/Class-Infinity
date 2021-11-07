@@ -1,28 +1,21 @@
 package com.mpr.classinfinity;
 
-import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.CompositePageTransformer;
-import androidx.viewpager2.widget.MarginPageTransformer;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.mpr.Adapters.CategoryScrollAdapter;
 import com.mpr.Adapters.CourseAdapterList;
-import com.mpr.Adapters.CourseHorizontalAdapter;
+import com.mpr.Adapters.CoursesItemAdapter;
 import com.mpr.Models.Category;
 import com.mpr.Models.Courses;
 import com.mpr.classinfinity.databinding.FragmentHomeBinding;
@@ -52,17 +45,17 @@ public class HomeFragment extends Fragment {
         categoryArrayList.add(new Category(R.drawable.buisness, "Business"));
         categoryArrayList.add(new Category(R.drawable.development, "Development"));
         categoryArrayList.add(new Category(R.drawable.marketing, "Marketing"));
-        categoryArrayList.add(new Category(R.drawable.engineering, "Engineering"));
+        categoryArrayList.add(new Category(R.drawable.design, "Design"));
         categoryArrayList.add(new Category(R.drawable.medical, "Medical"));
         categoryArrayList.add(new Category(R.drawable.music, "Music"));
-        categoryArrayList.add(new Category(R.drawable.govt, "Civil\nExams"));
-        categoryArrayList.add(new Category(R.drawable.sports, "Sports"));
+        categoryArrayList.add(new Category(R.drawable.photography, "Photography\n& Video"));
+        categoryArrayList.add(new Category(R.drawable.life_style, "Lifestyle"));
         categoryArrayList.add(new Category(R.drawable.fitness, "Health &\nFitness"));
-        categoryArrayList.add(new Category(R.drawable.personality, "Personality\nDevelopment"));
+        categoryArrayList.add(new Category(R.drawable.personality, "Personal \nDevelopment"));
 
         HomeAsyncTask task = new HomeAsyncTask();
         task.execute();
-
+ 
         return binding.getRoot();
     }
 
@@ -80,7 +73,7 @@ public class HomeFragment extends Fragment {
                 LinearLayoutManager.HORIZONTAL,
                 false);
 
-        CourseHorizontalAdapter adapter = new CourseHorizontalAdapter(booksInfos, binding.recyclerView2, getContext());
+        CoursesItemAdapter adapter = new CoursesItemAdapter(booksInfos, binding.recyclerView2, getContext(),R.layout.courses_horizontal_cardview,1);
         binding.recyclerView2.setAdapter(adapter);
         binding.recyclerView2.setLayoutManager(horizontalManager2);
 

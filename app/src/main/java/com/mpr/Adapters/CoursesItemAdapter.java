@@ -2,7 +2,6 @@ package com.mpr.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +10,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
 
 import com.bumptech.glide.Glide;
 import com.mpr.Models.Courses;
@@ -20,25 +18,29 @@ import com.mpr.classinfinity.R;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 
-public class CourseHorizontalAdapter extends RecyclerView.Adapter<CourseHorizontalAdapter.CourseHorizontalHolder> {
+public class CoursesItemAdapter extends RecyclerView.Adapter<CoursesItemAdapter.CourseHorizontalHolder> {
 
-    private ArrayList<Courses> list;
+    private List<Courses> list;
     private RecyclerView recyclerView;
     private Context context;
+    private int layoutId;
+    static private int uniqueL;
 
-    public CourseHorizontalAdapter(ArrayList<Courses> list, RecyclerView recyclerView, Context context) {
+    public CoursesItemAdapter(List<Courses> list, RecyclerView recyclerView, Context context, int layoutId, int uniqueL) {
         this.list = list;
         this.recyclerView = recyclerView;
         this.context = context;
+        this.layoutId = layoutId;
+        this.uniqueL = uniqueL;
+
     }
 
     @NonNull
     @Override
     public CourseHorizontalHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new CourseHorizontalHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.courses_horizontal_cardview, parent, false));
+        return new CourseHorizontalHolder(LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false));
     }
 
     @Override
@@ -78,26 +80,47 @@ public class CourseHorizontalAdapter extends RecyclerView.Adapter<CourseHorizont
         private ImageView imageView;
         private TextView textView;
 
+        private ImageView categoryCourseImage;
+        private TextView categoryCourseName;
+
         public CourseHorizontalHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.courseImage);
             textView = itemView.findViewById(R.id.courseName);
+            categoryCourseImage = itemView.findViewById(R.id.course_item_image);
+            categoryCourseName = itemView.findViewById(R.id.course_item_name);
         }
 
         void setImageView(Courses sliderItem) {
 
-            textView.setText(sliderItem.getTittle());
-            if (sliderItem.getCourseThumbnail() != null) {
-                try {
-                    Glide.with(imageView.getContext())
-                            .load(new URL(sliderItem.getCourseThumbnail()))
-                            .into(imageView);
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
+            if (uniqueL == 1) {
+                textView.setText(sliderItem.getTittle());
+                if (sliderItem.getCourseThumbnail() != null) {
+                    try {
+                        Glide.with(imageView.getContext())
+                                .load(new URL(sliderItem.getCourseThumbnail()))
+                                .into(imageView);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    Glide.with(imageView.getContext()).load(R.drawable.courses_icon).into(imageView);
                 }
-            } else {
-                Glide.with(imageView.getContext()).load(R.drawable.courses_icon).into(imageView);
+            } else if(uniqueL == 2){
+                categoryCourseName.setText(sliderItem.getTittle());
+                if (sliderItem.getCourseThumbnail() != null) {
+                    try {
+                        Glide.with(categoryCourseImage.getContext())
+                                .load(new URL(sliderItem.getCourseThumbnail()))
+                                .into(categoryCourseImage);
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    Glide.with(categoryCourseImage.getContext()).load(R.drawable.courses_icon).into(categoryCourseImage);
+                }
             }
+
         }
 
 
