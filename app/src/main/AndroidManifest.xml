@@ -17,11 +17,18 @@
         android:theme="@style/Theme.ClassInfinity"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".CategoryCoursesActivity"
+            android:name=".MoreCoursesActivity"
             android:theme="@style/mainPage"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
+            android:name=".CategoryCoursesActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/mainPage" />
+        <activity
             android:name=".OcrTextRecognition"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/mainPage" />
         <activity
@@ -35,6 +42,7 @@
         <activity
             android:name=".Authentication"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/logInPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +52,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/mainPage" />
 

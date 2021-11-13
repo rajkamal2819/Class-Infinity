@@ -1,5 +1,6 @@
 package com.mpr.classinfinity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -55,6 +56,14 @@ public class HomeFragment extends Fragment {
 
         HomeAsyncTask task = new HomeAsyncTask();
         task.execute();
+
+        binding.moreCourses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                task.cancel(true);
+                startActivity(new Intent(getContext(),MoreCoursesActivity.class));
+            }
+        });
  
         return binding.getRoot();
     }
