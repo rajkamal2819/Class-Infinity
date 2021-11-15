@@ -42,7 +42,7 @@ public class CategoryCoursesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 binding.progressSpineer.setVisibility(View.VISIBLE);
-                String httpLink = "https://www.udemy.com/api-2.0/courses/?page=1&page_size=50&search=";
+                String httpLink = "https://www.udemy.com/api-2.0/courses/?page=1&page_size=20&search=";
                 httpLink += binding.searchEdittext.getText().toString().trim();
                 Sample_json_Response = httpLink;
 

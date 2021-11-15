@@ -11,6 +11,11 @@ android {
         viewBinding true
     }
 
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
     defaultConfig {
         applicationId "com.mpr.classinfinity"
         minSdk 21
@@ -61,5 +66,8 @@ dependencies {
     implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
 
     implementation 'io.ak1:bubbletabbar:1.0.8'
+
+    implementation 'com.google.cloud:google-cloud-dialogflow:2.1.0'
+    implementation 'io.grpc:grpc-okhttp:1.30.0'
 
 }
