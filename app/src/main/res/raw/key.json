@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "agent-name-leea",
+  "private_key_id": "3287ec348f5a1d80aed20ed92a2effcb64080ccc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDUJiKQRxeL3xmQ\nvt8566ZnsxhfPVai5iMrg954hx2izRGSCGAQ3U9ZXYdzCYci15XfemhcebYBKyp2\neu92ljnHKsX2d4Oft9G4SrJohFMsWazSvhh8D7bxHZM8RZ9tN2cZCebNAHD2CQK/\n7OMQS5kd+sw6/jjvDtc90uIHXFZpRr2jkxwbefPogVklgmD3A3Bu5qvST4fJMuUH\n57dI5jMimGC9mov2GW8yqroPffDu8rrnRaFCW1/TLLecxlc3KZduSf1Ckh5Pd4zd\nC2824Lbtlr9xlGh/SVURH59ApEdHQ6iLApAzu1kFccKv7Ch2pCFFcWvTe35RYwJN\nVhAQecZ/AgMBAAECggEAMN0jwuWNB9t4MP21vsqHRoVazLz9EoI9gY1bFZnReqkP\nLfqd3eSLnULMqvN728uaKqIwHXSvNi+yFR4Vv9O0NSql9DHs8EHPnUofM7Ge0q1J\nADVmwFSCR6EPQ6epo+dJ6Nt9/KPoYNMMfhZa6mrvNpeIqOHbTTy22PeUtitPf+mu\npTau8ydcqDHFbt9lCxmQMt2376Mw3iOiFrcYdUuwChzKi2tcT5nb5E+atdmqjZsB\njAhKh/KdV6MvDCQSRFaB+4CGWOMg4n0D/M28ngwZBwAm4QBNIAYytBdI/5X/VdeY\nfhfBIWhgNL6TRlSZA+hDZn6c0Fyg/dzjL4IhDDPbGQKBgQD7TDkq4JIOlXFfsdOs\nU5H2Kj9SAZxiLtrxcsp3B7tQWKSEssUhL6X/z95K6y3wgN3yQY3eiv2m4F/jQ+em\nbHHz5XBwYC5DAbYoEWNsvvHpzxINN/SEAXKlXgXb+ukY5ryFntT2Ps76YkrtLgCz\nJeh42xujZEHBLnTJ+yfMGgPF1QKBgQDYHmEuXvkP0J8ZlCmPVi7+BHKGrvLfB6My\nI6dY6ByrGRqzugHn4mFDbLYZM5p2g0D6HekrmvCeXncsceqsgt1ieotnlX0c5EVC\nx0Bl/TQYc1hzl4q5qfYMceR5q+B51N6bSadDaS/5z/7lBt2UaPrky2Aw0bNQUUhB\ngZft3zYhAwKBgDTpVLQher9VWfzDLYWARyBkvtZefnXx1am2+MhdOWRudZ13Iqid\nJr+ZHf36TL7x80l54gw0ibnkTmxEtPbGqKuo6KbQqYz0RE1lc+DGx5rqPavI11Qg\nFeqZxHQP/Zp/orwjuEVs7hmsLoiIAh+2YJ9pywT5LBsn0/FfT37bD2ZNAoGBAK5c\nRDdvNC3IOLQgTy9vbtZNrEBxIU1DEi0/iqI2EfsQc/SQmz0D7UjCil/mvDXlSyT/\nwMEHbh23RRq8hYLMyePLznCxsJEAschgjNo74C3h0XjgyHFmaDY+JQDs5Fwmm7pZ\nP/MpCCXZ42HPmjFESTcRxfddF/gyu8Lt1S96qGcVAoGAVr3s7sdNclErmvMz6hu3\nqA8J6ruX1IlE2OlOocwCOKpgJFViq4Ip+7yPtcfzQcAUx9xbP3FyLAexB0N332G1\n1c5Urz7yjUuS9dqGTsRcQR2WZuqUNHuTbs/fMTjOpQd2EtJmT7iGyySmIMncvG6I\n3vM2buJs5sQhw3vnSGB/b0E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialog@agent-name-leea.iam.gserviceaccount.com",
+  "client_id": "102853597257721453839",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialog%40agent-name-leea.iam.gserviceaccount.com"
+}
