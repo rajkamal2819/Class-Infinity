@@ -3,14 +3,11 @@ package com.mpr.classinfinity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.api.gax.core.FixedCredentialsProvider;
@@ -23,8 +20,8 @@ import com.google.cloud.dialogflow.v2.SessionsClient;
 import com.google.cloud.dialogflow.v2.SessionsSettings;
 import com.google.cloud.dialogflow.v2.TextInput;
 import com.google.common.collect.Lists;
-import com.mpr.Adapters.ChatAdapter;
-import com.mpr.Models.Messages;
+import com.mpr.Adapter.ChatAdapter;
+import com.mpr.Model.Messages;
 import com.mpr.classinfinity.databinding.FragmentChatBotBinding;
 import com.mpr.classinfinity.interfaces.BotReply;
 

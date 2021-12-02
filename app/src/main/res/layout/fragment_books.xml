@@ -22,10 +22,11 @@
         android:textAppearance="?android:textAppearanceMedium"/>
 
     <ProgressBar
+        android:visibility="gone"
         android:id="@+id/loading_spinner"
-        android:layout_centerInParent="true"
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

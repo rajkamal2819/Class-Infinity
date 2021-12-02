@@ -3,15 +3,12 @@ package com.mpr.classinfinity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationBarView;
 import com.mpr.classinfinity.databinding.ActivityMainBinding;
-
-import io.ak1.OnBubbleClickListener;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.setting_menu:
-                        transaction.replace(R.id.main_content,new SettingsFragment());
+                        transaction.replace(R.id.main_content,new ProfileFragment());
                         break;
 
                     case R.id.chatBot:
@@ -82,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case 1:
-                        transaction.replace(R.id.main_content,new SettingsFragment());
+                        transaction.replace(R.id.main_content,new ProfileFragment());
                         transaction.commit();
                         break;
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Relevance"
+        android:icon="@drawable/book"
+        android:color="@color/white"
+        android:id="@+id/relevance"/>
+
+    <item android:title="Most Reviewed"
+        android:color="@color/white"
+        android:icon="@drawable/favorites"
+        android:id="@+id/highRated"/>
+
+    <item
+        android:title="Newest"
+        android:color="@color/white"
+        android:icon="@drawable/newest"
+        android:id="@+id/newest"/>
+
+</menu>

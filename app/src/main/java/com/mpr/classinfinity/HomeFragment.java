@@ -14,11 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mpr.Adapters.CategoryScrollAdapter;
-import com.mpr.Adapters.CourseAdapterList;
-import com.mpr.Adapters.CoursesItemAdapter;
-import com.mpr.Models.Category;
-import com.mpr.Models.Courses;
+import com.mpr.Adapter.CategoryScrollAdapter;
+import com.mpr.Adapter.CourseAdapterList;
+import com.mpr.Adapter.CoursesItemAdapter;
+import com.mpr.Model.Category;
+import com.mpr.Model.Courses;
 import com.mpr.classinfinity.databinding.FragmentHomeBinding;
 
 import java.net.URL;

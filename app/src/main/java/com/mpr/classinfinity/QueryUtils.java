@@ -7,8 +7,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import com.google.android.gms.common.util.Base64Utils;
-import com.mpr.Models.Courses;
+import com.mpr.Model.Courses;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,7 +22,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class QueryUtils {
 
@@ -86,16 +84,6 @@ public class QueryUtils {
             urlConnection.setReadTimeout(10000 /* milliseconds */);
             urlConnection.setConnectTimeout(15000 /* milliseconds */);
             urlConnection.setDoInput(true);
-
-           // String basicAuth = "Basic " + new String(Base64.getEncoder().encode(("VmhJaGdRdWdrRjR5NzB2N1pqR3cwa3RGTk9VcTdjZE1Tb3VRSGdkNzoyMVRtb1d2NjhpWUxhc1FqTHdwYTVPRVh0VGo3SUtJZUExRUpMTGhhanhrTUh5SXBDWmhFTzVvakE3ZEV4cERudWdzaFZrdXRzQmdZRHdHTkxhZjJYWGg2bHhlbUdQandVOE42ZnZodTNmVEZsc08zaGg0NkpaUE90TVUxSWZJeA==").getBytes()));
-
-            //urlConnection.setRequestProperty("Accept","application/json, text/plain, */*");
-          //  urlConnection.setRequestProperty("Authorization","Basic "+basicAuth);
-          //  urlConnection.setRequestMethod("POST");
-          //  urlConnection.setRequestProperty("Content-Type","application/json;charset=utf-8");
-
-           // urlConnection.setUseCaches(false);
-          //  urlConnection.setDoOutput(true);
 
             urlConnection.connect();
 

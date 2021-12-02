@@ -1,13 +1,71 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mpr.Fragments.MostReviewdCourses">
+    android:id="@+id/nestedScrollView"
+    android:fillViewport="true"
+    tools:context="com.mpr.Fragmentss.MostReviewdCourses">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_rounded"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="5dp"
+                android:hint="Search" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Search"
+                android:background="@drawable/edittext_rounded"
+                android:backgroundTint="@color/purple"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/linearLayout3"
+            android:id="@+id/recyclerViewMostReviewed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/loading_spinnerEnd"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -9,5 +9,9 @@
         <item name="colorPrimaryDark">@color/light_purple</item>
     </style>
 
+    <!--<style name="profile" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">#730264</item>
+    </style>-->
+
 
 </resources>

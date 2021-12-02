@@ -11,12 +11,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.mpr.Models.Courses;
 import com.mpr.classinfinity.databinding.CoursesDetailsLayoutBinding;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 
 public class CourseDetailsActivity extends AppCompatActivity {
 

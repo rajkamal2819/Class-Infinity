@@ -10,9 +10,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
 
-import com.mpr.Adapters.CoursesItemAdapter;
-import com.mpr.Models.Courses;
+import com.mpr.Adapter.CoursesItemAdapter;
+import com.mpr.Model.Courses;
 import com.mpr.classinfinity.databinding.ActivityCategoryCoursesBinding;
 
 import java.net.URL;
@@ -23,6 +24,7 @@ public class CategoryCoursesActivity extends AppCompatActivity {
     ActivityCategoryCoursesBinding binding;
     int page = 1;
     private static String Sample_json_Response = "";
+    ProgressBar spinner;
 
     @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
@@ -33,15 +35,16 @@ public class CategoryCoursesActivity extends AppCompatActivity {
 
         Sample_json_Response = getIntent().getStringExtra("Category");
         String category = getIntent().getStringExtra("CategoryType");
-        binding.progressSpineer.setVisibility(View.VISIBLE);
 
         UtilsAsyncTask task = new UtilsAsyncTask();
         task.execute();
 
+        spinner = (ProgressBar) findViewById(R.id.progress_spineer);
+
         binding.search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                binding.progressSpineer.setVisibility(View.VISIBLE);
+                spinner.setVisibility(View.VISIBLE);
                 String httpLink = "https://www.udemy.com/api-2.0/courses/?page=1&page_size=20&search=";
                 httpLink += binding.searchEdittext.getText().toString().trim();
                 Sample_json_Response = httpLink;
@@ -51,23 +54,26 @@ public class CategoryCoursesActivity extends AppCompatActivity {
             }
         });
 
-        /*binding.nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+       /* binding.nestedScrollView.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
             @Override
             public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
                 if(scrollY == v.getChildAt(0).getMeasuredHeight() - v.getMeasuredHeight()){
-                    //when reach last item position increase pageSize
-                    page++;
-                   // binding.progressSpineer.setVisibility(View.VISIBLE);
+                    // binding.progressSpineer.setVisibility(View.VISIBLE);
 
                     // https://www.udemy.com/api-2.0/courses/?page=1&search=
 
-                    String httpLink = "https://www.udemy.com/api-2.0/courses/?page=";
-                    httpLink += page;
-                    httpLink += "&search="+category;
-                    Sample_json_Response = httpLink;
+                    *//*limit += 20;
+                    Log.i(LOG_TAG,"LIMIT: "+limit);
+                    Json_Link = tempLink;
+                    Json_Link += limit;
 
-                    UtilsAsyncTask task1 = new UtilsAsyncTask();
+                    binding.progressBarMoreResp.setVisibility(View.VISIBLE);
+                    UtilsAsyncTaskMore task1 = new UtilsAsyncTaskMore();
                     task1.execute();
+
+                    Log.i(LOG_TAG,"More Result Link: "+Json_Link);*//*
+
+
 
                 }
             }
@@ -96,7 +102,7 @@ public class CategoryCoursesActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(ArrayList<Courses> event) {
 
-            binding.progressSpineer.setVisibility(View.GONE);
+            spinner.setVisibility(View.GONE);
 
             if (event == null) {
                 binding.emptyNoBook.setText("No Books Found");
