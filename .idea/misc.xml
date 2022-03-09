@@ -3,22 +3,36 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable-v24/bg_chat_receive.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable-v24/bg_chat_send.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/chat_msg_bg.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/edittext_rounded.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/gradient.xml" value="0.2657407407407407" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/drawable/layout_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_authentication.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_category_courses.xml" value="0.25025641025641027" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/activity_more_courses.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/adapter_message_one.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/category_course_item.xml" value="0.25025641025641027" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/courses_item_specific.xml" value="0.25" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_books.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_chat_bot.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_home_fragement.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_log_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_most_reviewd_courses.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_newest_courses.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_relavance_courses.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_scanner.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/layout/fragment_sign_up.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/menu/main_activity_navigation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/menu/main_activity_navigation_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ClassInfinity/app/src/main/res/menu/more_courses.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
