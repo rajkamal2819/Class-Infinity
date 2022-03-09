@@ -1,4 +1,4 @@
-package com.mpr.Fragmentss;
+package com.mpr.classinfinity.Fragmentss;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mpr.Model.Users;
+import com.mpr.classinfinity.Model.Users;
 import com.mpr.classinfinity.MainActivity;
 import com.mpr.classinfinity.databinding.FragmentSignUpBinding;
 

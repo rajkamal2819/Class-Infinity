@@ -1,4 +1,4 @@
-package com.mpr.Model;
+package com.mpr.classinfinity.Model;
 
 import java.util.ArrayList;
 

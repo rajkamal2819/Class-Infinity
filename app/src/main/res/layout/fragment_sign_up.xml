@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.mpr.Fragmentss.SignUpFragment">
+    tools:context=".Fragmentss.SignUpFragment">
 
     <EditText
         android:id="@+id/userName"

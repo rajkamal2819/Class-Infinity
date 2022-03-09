@@ -8,7 +8,7 @@ import android.util.Log;
 import androidx.annotation.RequiresApi;
 import androidx.loader.content.AsyncTaskLoader;
 
-import com.mpr.Model.Courses;
+import com.mpr.classinfinity.Model.Courses;
 
 import java.util.ArrayList;
 

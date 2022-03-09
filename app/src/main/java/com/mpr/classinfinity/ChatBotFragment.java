@@ -20,8 +20,8 @@ import com.google.cloud.dialogflow.v2.SessionsClient;
 import com.google.cloud.dialogflow.v2.SessionsSettings;
 import com.google.cloud.dialogflow.v2.TextInput;
 import com.google.common.collect.Lists;
-import com.mpr.Adapter.ChatAdapter;
-import com.mpr.Model.Messages;
+import com.mpr.classinfinity.Adapter.ChatAdapter;
+import com.mpr.classinfinity.Model.Messages;
 import com.mpr.classinfinity.databinding.FragmentChatBotBinding;
 import com.mpr.classinfinity.interfaces.BotReply;
 

@@ -8,10 +8,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.tabs.TabLayout;
-import com.mpr.Fragmentss.MostReviewdCourses;
-import com.mpr.Fragmentss.NewestCourses;
-import com.mpr.Fragmentss.RelavanceCourses;
+import com.mpr.classinfinity.Fragmentss.MostReviewdCourses;
+import com.mpr.classinfinity.Fragmentss.NewestCourses;
+import com.mpr.classinfinity.Fragmentss.RelavanceCourses;
 import com.mpr.classinfinity.databinding.ActivityMoreCoursesBinding;
 
 public class MoreCoursesActivity extends AppCompatActivity {

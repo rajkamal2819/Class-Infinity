@@ -24,8 +24,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mpr.Adapter.FragmentAdapter;
-import com.mpr.Model.Users;
+import com.mpr.classinfinity.Adapter.FragmentAdapter;
+import com.mpr.classinfinity.Model.Users;
 import com.mpr.classinfinity.databinding.ActivityAuthenticationBinding;
 
 public class

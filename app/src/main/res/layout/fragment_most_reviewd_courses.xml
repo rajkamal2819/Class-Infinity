@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/nestedScrollView"
     android:fillViewport="true"
-    tools:context="com.mpr.Fragmentss.MostReviewdCourses">
+    tools:context=".Fragmentss.MostReviewdCourses">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -52,10 +52,10 @@
             android:layout_centerInParent="true" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@id/linearLayout3"
-            android:id="@+id/recyclerViewMostReviewed"
+            android:id="@+id/recyclerViewMostRev"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_below="@id/linearLayout3" />
 
         <ProgressBar
             android:id="@+id/loading_spinnerEnd"

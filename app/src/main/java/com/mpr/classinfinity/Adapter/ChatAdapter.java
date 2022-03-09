@@ -1,4 +1,4 @@
-package com.mpr.Adapter;
+package com.mpr.classinfinity.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mpr.classinfinity.R;
-import com.mpr.Model.Messages;
+import com.mpr.classinfinity.Model.Messages;
 
 import java.util.List;
 

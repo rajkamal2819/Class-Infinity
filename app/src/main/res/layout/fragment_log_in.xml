@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.mpr.Fragmentss.LogInFragment">
+    tools:context=".Fragmentss.LogInFragment">
 
     <EditText
         android:id="@+id/emailId"

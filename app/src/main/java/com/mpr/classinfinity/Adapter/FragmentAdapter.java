@@ -1,4 +1,4 @@
-package com.mpr.Adapter;
+package com.mpr.classinfinity.Adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,8 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.mpr.Fragmentss.LogInFragment;
-import com.mpr.Fragmentss.SignUpFragment;
+import com.mpr.classinfinity.Fragmentss.LogInFragment;
+import com.mpr.classinfinity.Fragmentss.SignUpFragment;
 
 public class FragmentAdapter extends FragmentPagerAdapter {
     public FragmentAdapter(@NonNull FragmentManager fm) {

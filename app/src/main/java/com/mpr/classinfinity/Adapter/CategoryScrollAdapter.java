@@ -1,4 +1,4 @@
-package com.mpr.Adapter;
+package com.mpr.classinfinity.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.mpr.Model.Category;
+import com.mpr.classinfinity.Model.Category;
 import com.mpr.classinfinity.CategoryCoursesActivity;
 import com.mpr.classinfinity.R;
 
@@ -72,7 +72,7 @@ public class CategoryScrollAdapter extends RecyclerView.Adapter<CategoryScrollAd
                         category = "Personal Development"; break;
                 }
 
-                String httpLink = "https://www.udemy.com/api-2.0/courses/?page=1&page_size=50&search=";
+                String httpLink = "https://www.udemy.com/api-2.0/courses/?page=1&page_size=20&search=";
                 httpLink += category;
 
                 i.putExtra("Category", httpLink);

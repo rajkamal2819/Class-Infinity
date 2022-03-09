@@ -1,4 +1,4 @@
-package com.mpr.Fragmentss;
+package com.mpr.classinfinity.Fragmentss;
 
 import android.os.AsyncTask;
 import android.os.Build;
@@ -14,9 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.util.Util;
-import com.mpr.Adapter.CoursesItemAdapter;
-import com.mpr.Model.Courses;
+import com.mpr.classinfinity.Adapter.CoursesItemAdapter;
+import com.mpr.classinfinity.Model.Courses;
 import com.mpr.classinfinity.QueryUtils;
 import com.mpr.classinfinity.R;
 import com.mpr.classinfinity.databinding.FragmentRelavanceCoursesBinding;

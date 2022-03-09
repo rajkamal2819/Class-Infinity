@@ -14,11 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.mpr.Adapter.CategoryScrollAdapter;
-import com.mpr.Adapter.CourseAdapterList;
-import com.mpr.Adapter.CoursesItemAdapter;
-import com.mpr.Model.Category;
-import com.mpr.Model.Courses;
+import com.mpr.classinfinity.Adapter.CategoryScrollAdapter;
+import com.mpr.classinfinity.Adapter.CourseAdapterList;
+import com.mpr.classinfinity.Adapter.CoursesItemAdapter;
+import com.mpr.classinfinity.Model.Category;
+import com.mpr.classinfinity.Model.Courses;
 import com.mpr.classinfinity.databinding.FragmentHomeBinding;
 
 import java.net.URL;
@@ -106,7 +106,7 @@ public class HomeFragment extends Fragment {
             binding.loadingSpinnerHome.setVisibility(View.GONE);
 
             if (event == null) {
-                return;
+                return;  
             }
 
             // mEmptyListTextView.setText("No Books Found");

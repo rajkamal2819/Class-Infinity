@@ -7,7 +7,7 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
-import com.mpr.Model.Courses;
+import com.mpr.classinfinity.Model.Courses;
 
 import org.json.JSONArray;
 import org.json.JSONException;

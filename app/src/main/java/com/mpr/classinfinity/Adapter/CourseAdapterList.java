@@ -1,4 +1,4 @@
-package com.mpr.Adapter;
+package com.mpr.classinfinity.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
-import com.mpr.Model.Courses;
+import com.mpr.classinfinity.Model.Courses;
 import com.mpr.classinfinity.R;
 
 import java.net.MalformedURLException;
